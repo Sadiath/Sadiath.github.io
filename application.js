@@ -1,10 +1,10 @@
 var config = {
-    apiKey: "AIzaSyD90XsWJOANcVOu11tyrWUt0aDv0EBysX0",
-    authDomain: "newcomments-4e8a0.firebaseapp.com",
-    databaseURL: "https://newcomments-4e8a0.firebaseio.com",
-    projectId: "newcomments-4e8a0",
-    storageBucket: "",
-    messagingSenderId: "182797535899"
+    apiKey: "AIzaSyDDIdwu9YjEtKNzQkPHd3U3RZtY5v_esAg",
+    authDomain: "sadia-s-project.firebaseapp.com",
+    databaseURL: "https://sadia-s-project.firebaseio.com",
+    projectId: "sadia-s-project",
+    storageBucket: "sadia-s-project.appspot.com",
+    messagingSenderId: "545615931411"
 };
 
 // Initialize your Firebase app
