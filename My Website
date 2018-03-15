@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Coiny|Anton|Lobster|Papyrus|" rel="stylesheet">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+     
+	h1{
+		font-family: 'Anton',;
+		color: blue;
+	}
+      
+      body {
+      		background-color: #317;
+      	  	color: red;
+      	  	padding: 15px;
+      	  	font-size: 25px;
+		font-family: 'Lobster'; 
+		 
+      }
+	h3{ 
+		font-family: "Papyrus";
+		color: white;
+		font-size: 90;
+     }
+	h4 {
+		font-family:"Coiny";
+		border: 1px solid black; 
+		color:white;
+		font-size: 30;
+    }
+   img{ 
+	   border-radius: 10px;
+   	}
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Sadia's Personality Description</h1>   
+    <p>Some Categories that represents "Me"</p>
+	
+  </div>
+</div>
+  
+<div class="container-fluid bg-3 text-center">    
+  <h3>Some of my Favorite Activites to do</h3><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <p>Makeup!</p>
+	  <img src="http://quickmakeup.net/wp-content/uploads/2017/11/glitter-eyeliner-soft-smokey-eye-800x445.jpg" class="img-responsive" style="width:100%" alt="Image">
+	  <p>This is one of the personal beauty activites that i like to do. Makeup is my addiction. Every store or place i visit that has makeup i have to buy atleast one thing until i leave the store. I cant resist it.</p>
+	  <button>Like</button>
+	  <button>Dislike</button>
+    </div>
+    <div class="col-sm-3"> 
+      <p>Fashion/Dressing Up</p>
+      <img src="http://ohindustry.com/wp-content/uploads/2016/03/office-fashion-1050x700.jpg" class="img-responsive" style="width:100%" alt="Image">
+	  <p> Fashion is something that demonstrates as my daily life routine. It shows my personality because every individual has different styles of expression themselves. Also, it indicates my way of behavior and manners.</p>
+	  <button>Like</button>
+	  <button>Dislike</button>
+    </div>
+    <div class="col-sm-3"> 
+      <p>Talkitive/Communication</p>
+      <img src="https://previews.123rf.com/images/gemenacom/gemenacom0904/gemenacom090400050/4637761-two-girls-talking.jpg" class="img-responsive" style="width:100%" alt="Image">
+	  <p> As you know a lot of people like to communicate with one another because it's a form of getting to know one another. I love to talk, and make friends because it is part of my personality.</p>
+	  <button>Like</button>
+	  <button>Dislike</button>
+    </div>
+    <div class="col-sm-3">
+      <p>Peaceful Places</p>
+      <img src="https://www.wikihow.com/images/thumb/6/63/Avoid-Being-Talkative-Step-7.jpg/aid3965619-v4-728px-Avoid-Being-Talkative-Step-7.jpg" class="img-responsive" style="width:100%" alt="Image">
+	  <p> Omg, going to peaceful places where there are city lights, buildings, water, and a beautiful view is something i can sit infront of for hours and never get tired. I love to go there because it reveals all my stress or worries i have. </p>
+	  <button>Like</button>
+	  <button>Dislike</button>
+    </div>
+  </div>
+</div><br>
+
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-3">
+      <p>Cats</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAYl7ibT5W7VYpUi5whKYZgE0vwHPuTnIxSRbdHpxj_sUdz0YAHg" class="img-responsive" style="width:100%" alt="Image">
+	  <p>Cats, I love them. There are a lot of people in the world who have pets and like animals. I have a cat, and her name is Simba. She is a kitten and I just love playing with her because it makes me happy. </p> 
+	  <button>Like</button>
+	          <button>Dislike</button>
+    </div>
+    <div class="col-sm-3"> 
+      <p>Shopping</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTvodaLQHE876iShPxl2eEnOg6GqjJDhI5cAy-a3NDJiQTMr5_" style="width:100%" alt="Image">
+	  <p>There are a lot of girls that love to shop and i can't ever go to anystore without buying something. Rather it's clothes, shoes, or even jewerly. </p>
+	  <button>Like</button>
+	          <button>Dislike</button>
+    </div>
+    <div class="col-sm-3"> 
+      <p>Writing Diaries</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2s4DDWAdTDd_cNi8cXO47STVLpp5o0i_zhVVS2Zubd0ga0IVN5A" class="img-responsive" style="width:100%" alt="Image">
+	   <p>This hobby of mine attracts me since so many years. There are some thoughts, emotions, and even feelings that i don't like sharing with any individual. So inorder to clear my thoughts off i write it in my diary as my own personal hobby.</p>
+	  <button>Like</button>
+	          <button>Dislike</button>
+    </div>
+    <div class="col-sm-3">
+      <p>Biking</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0TIJ_ilGytEd7CH24NzlE14IdN08hIA6QoZ5ID0A7I5YKQjkk" class="img-responsive" style="width:100%" alt="Image">
+	  <p>Biking can fall under a category of hobby, activity, and even exercise. During the summer time i bike atleast 2 hours</p> 
+	  <button>Like</button>
+	          <button>Dislike</button>
+    </div>
+  </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+</footer>
+<!-- This is where i added a section of the second project entitled "Blog" -->
+ <h4>Leave a Comment Of Your Own Opinon:</h4>
+      <form role="form">
+        <div class="form-group">
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      <br><br>
+      
+      <p><span class="badge">2</span> Comments:</p><br>
+	  <div class="row">
+	  <div class="col-sm-2 text-center">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_rManjOb4jmM1F9sOrGfyW25bdsXWzM3320w3YNHFq-yLkvTp" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+	  <h4>Ubaid Thoophany<small>March 17 2017, 3:17PM</small></h4>
+          <p>Keep up the GREAT work! Building your own personal profolio. Im glad that you're open to what types of activities and hobbies you like to do because not a lot of people have this confidence of synthesizing their own profolio informatio</p>
+          <br>
+        </div>
+        <div class="col-sm-2 text-center">
+          <img src="https://i.ytimg.com/vi/qXzQIik-QRQ/hqdefault.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>Aliza Ahmed <small>October 8 2015, 7:15 PM</small></h4>
+          <p>Omg Sadia this is great, I love how you made this profile can you teach me?!! I am looking forward to read about your likes in life. This talent in you is amazing. </p>
+          <br>
+          <p><span class="badgfaisalsadiaBootstrap1.html" title="faisalsadiaBootstrap1e">2</span> Comment:</p><br>
+          <div class="row">
+            <div class="col-sm-2 text-center">
+              <img src="https://i.ytimg.com/vi/qXzQIik-QRQ/hqdefault.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+            </div>
+            <div class="col-xs-10">
+              <h4>Victoria Sing <small>Sep 25 2015, 8:28pm </small></h4>
+              <p>I love it alsooooo amazing!!!</p>
+		<h4>Ameera Khan <small>May 15 2012, 6:35pm
+</small></h4>
+		<p> I agree with you Victoria. But Sadia why dont you edit it and make it more colorful!!</p>
+		   </div>
+		     </div>
+		   </div><br><br>
+	     
+	 <script>
+		   $("button").on("click", function() {
+			   alert("Clicked!");
+		    });
+			</script>
+</body>
+</html>
