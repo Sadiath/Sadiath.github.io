@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <title>My Profile</title>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>	
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Coiny|Anton|Lobster|Papyrus|" rel="stylesheet">
   <style>
@@ -44,7 +45,25 @@
    img{ 
 	   border-radius: 10px;
    	}
-
+  table img {  
+	 border-radius: 50px;
+	 background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/2000px-No_image_available.svg.png');
+	 height: 50px; 
+    } 
+    table {
+      margin-left: 20px;
+    }  
+    td {
+      height: 75px; 
+    }
+    @media screen and (max-width: 767px) {
+       table {
+				margin-left: 0;
+      }
+      table img {
+				height: 20px;
+      }
+	  }
   </style>
 </head>
 <body>
@@ -152,15 +171,73 @@
 </footer>
 <!-- This is where i added a section of the second project entitled "Blog" -->
  <h4>Leave a Comment Of Your Own Opinon:</h4>
-      <form role="form">
+      <form id="commentForm">
+		  
         <div class="form-group">
-          <textarea class="form-control" rows="3" required></textarea>
+          <label for="yourName">Name</label>
+          <input class="form-control" id="yourName" placeholder="Your name" maxlength="20">
         </div>
-        <button type="submit" class="btn btn-success">Submit</button>
+
+        <div class="form-group">
+          <label for="yourComment">Comment</label>
+          <input class="form-control" id="yourComment" placeholder="Your comment" maxlength="140">
+        </div>
+	      
+        <div class="form-group">
+          <label for="yourLink">Image source (optional)</label>
+          <input class="form-control" id="yourLink" placeholder="Your image source (optional)" maxlength="500">
+        </div>
+	      
+        <!-- When you click this button, trigger the submit event on this form. -->
+        <button type="submit" class="btn btn-default" onclick="alert('Thank you for submitting')">Submit</button>
+		
       </form>
       <br><br>
       
-      <p><span class="badge">2</span> Comments:</p><br>
+      <p><span class="badge"></span> Comments:</p><br>
+
+    <table>
+	<tr>
+	<td>
+	    <table>
+		<thead>
+		    <tr>
+		        <td><strong>Avatar</strong></td>
+		    </tr>
+		</thead>
+		<tbody id="link">
+
+		</tbody>
+	    </table>
+	</td>
+	<td>
+	    <table>
+		<thead>
+		    <tr>
+			<td><strong>Name</strong></td>
+		    </tr>
+		</thead>
+		<tbody id="title">
+
+		</tbody>
+	    </table>
+	</td>
+	<td>
+	    <table>
+		<thead>
+		    <tr>
+			<td><strong>Comment</strong></td>
+		    </tr>
+		</thead>
+		<tbody id="remark">
+
+		</tbody>
+	    </table>
+	</td>
+	</tr>
+      </table>
+
+	
 	  <div class="row">
 	  <div class="col-sm-2 text-center">
 	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_rManjOb4jmM1F9sOrGfyW25bdsXWzM3320w3YNHFq-yLkvTp" class="img-circle" height="65" width="65" alt="Avatar">
@@ -192,10 +269,15 @@
 		     </div>
 		   </div><br><br>
 	     
-	 <script>
-		   $("button").on("click", function() {
-			   alert("Clicked!");
-		    });
-			</script>
+<script>
+$("button").on("click", function() {
+   alert("Clicked!");
+});
+</script>
+		  
+<!-- Load the application script, which will save data to our Firebase app when we click the button. -->
+<script src="/application.js">
+</script>
+		  
 </body>
 </html>
